@@ -1,0 +1,22 @@
+# Local models and large runtime data
+model/
+
+# Local copy of the upstream textbook and other source materials
+theAIMythbook-1.0.1/
+*.pdf
+
+# Local editor logs and machine-specific artifacts
+Typora_Hook_Log.txt
+plan/Typora_Hook_Log.txt
+
+# Keep unfinished days out of the first public release
+plan/*Day.md
+!plan/1Day.md
+notes/day-02-*.md
+reports/day-02-*.md
+cases/llm-security/day-02-*.md
+labs/run-day02-*.ps1
+labs/day02-*.json
+
+# Personal scratch note excluded by the publishing scope
+Day 1.md
