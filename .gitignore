@@ -9,14 +9,23 @@ theAIMythbook-1.0.1/
 Typora_Hook_Log.txt
 plan/Typora_Hook_Log.txt
 
-# Keep unfinished days out of the first public release
+# Publish daily plans and results only after each day is complete
 plan/*Day.md
 !plan/1Day.md
+!plan/2Day.md
 notes/day-02-*.md
+!notes/day-02-llm-basics.md
 reports/day-02-*.md
+!reports/day-02-ollama-test-log.md
+!reports/day-02-review.md
 cases/llm-security/day-02-*.md
+!cases/llm-security/day-02-llm-failures.md
 labs/run-day02-*.ps1
+!labs/run-day02-ollama-api.ps1
+!labs/run-day02-failure-cases.ps1
+!labs/run-day02-output-comparison.ps1
 labs/day02-*.json
+!labs/day02-failure-prompts.json
 
 # Personal scratch note excluded by the publishing scope
 Day 1.md

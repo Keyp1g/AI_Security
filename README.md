@@ -6,8 +6,8 @@
 
 ## 当前进度
 
-- 已公开：总路线、42 天总计划、Day 1 计划和 Day 1 学习成果
-- 暂未公开：Day 2 计划与成果，待 Day 3 计划完成后再发布
+- 已公开：总路线、42 天总计划、Day 1 与 Day 2 的计划和学习成果
+- 当前进度：Day 2 已完成并形成 LLM 基础笔记、10 条测试用例和本地模型对比实验
 - 学习环境：本地模型、虚构数据、模拟工具和明确授权的实验环境
 
 ## 目录
@@ -22,12 +22,20 @@
 | `tools/` | 评测器和辅助脚本 |
 | `路线/` | 学习路线参考截图 |
 
-## 首发内容
+## 已公开内容
 
 - [42 天总计划](plan/AI安全42天逐日逐小时学习计划.md)
 - [Day 1 计划](plan/1Day.md)
 - [Day 1 基础笔记](notes/day-01-foundation.md)
 - [Day 1 复盘](reports/day-01-review.md)
+- [Day 2 计划](plan/2Day.md)
+- [Day 2 LLM 基础笔记](notes/day-02-llm-basics.md)
+- [Day 2 输出对比实验](labs/day-02-output-comparison.md)
+- [Day 2 LLM 失败样例](cases/llm-security/day-02-llm-failures.md)
+- [LLM 安全测试用例库](cases/llm-security/README.md)
+- [LLM 风险初表](cases/llm-security/llm-risk-initial.md)
+- [Day 2 Ollama 测试日志](reports/day-02-ollama-test-log.md)
+- [Day 2 复盘](reports/day-02-review.md)
 - [学习索引](学习索引.md)
 - [AI 安全路线拆解](AI安全路线拆解.md)
 - [AI 安全知识地图](AI安全知识地图.md)
