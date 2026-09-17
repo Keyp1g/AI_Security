@@ -9,10 +9,11 @@ theAIMythbook-1.0.1/
 Typora_Hook_Log.txt
 plan/Typora_Hook_Log.txt
 
-# Publish daily plans and results only after each day is complete
+# Publish daily plans and results only after their release scope is confirmed
 plan/*Day.md
 !plan/1Day.md
 !plan/2Day.md
+!plan/3Day.md
 notes/day-02-*.md
 !notes/day-02-llm-basics.md
 reports/day-02-*.md
