@@ -30,3 +30,24 @@ labs/day02-*.json
 
 # Personal scratch note excluded by the publishing scope
 Day 1.md
+
+# Local learning and publishing methodologies
+notes/learning-methodology.md
+GitHub上线方法论.md
+
+# Day 3 release boundary
+notes/day-03-*.md
+!notes/day-03-prompt-and-instructions.md
+reports/day-03-*
+!reports/day-03-prompt-quality-run.jsonl
+!reports/day-03-prompt-variants-run.jsonl
+!reports/day-03-review.md
+cases/llm-security/day-03-*.md
+!cases/llm-security/day-03-prompt-quality-cases.md
+labs/day-03-*.md
+!labs/day-03-prompt-variants.md
+labs/day03-*.json
+!labs/day03-prompt-quality-cases.json
+!labs/day03-prompt-variants.json
+labs/run-day03-*.ps1
+!labs/run-day03-prompt-quality.ps1

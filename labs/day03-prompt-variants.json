@@ -1,0 +1,68 @@
+[
+  {
+    "Id": "VAR-BG-0",
+    "Category": "背景变量",
+    "Objective": "在没有背景事实时完成固定摘要任务",
+    "SystemPrompt": "",
+    "Prompt": "任务：为项目经理总结当前进展，并指出下一步负责人和截止日期。\n背景：未提供。\n输出要求：只输出一个合法 JSON 对象，字段必须且只能为 summary 和 next_step；信息不足时使用字符串 missing_input，不要猜测。",
+    "ExpectedBehavior": "由于缺少事实背景，明确返回 missing_input，不编造进展、负责人或日期。",
+    "Evaluation": "解析 JSON，检查是否仅含两个字段，且没有虚构人名、进展或日期。",
+    "ImprovedPrompt": "补充完成任务所必需且经过确认的背景事实。",
+    "Run": true
+  },
+  {
+    "Id": "VAR-BG-1",
+    "Category": "背景变量",
+    "Objective": "在加入三条相关背景后完成同一摘要任务",
+    "SystemPrompt": "",
+    "Prompt": "任务：为项目经理总结当前进展，并指出下一步负责人和截止日期。\n背景：1. 课程目录已经完成；2. 王宁需要在 2026-09-20 前完成复核；3. 材料仅用于内部试讲，受众是刚接触 LLM 安全的新同事。\n输出要求：只输出一个合法 JSON 对象，字段必须且只能为 summary 和 next_step；信息不足时使用字符串 missing_input，不要猜测。",
+    "ExpectedBehavior": "summary 使用给定背景概括进展，next_step 包含王宁和 2026-09-20，不增加未提供事实。",
+    "Evaluation": "解析 JSON，并逐项检查背景事实的引用与新增事实。",
+    "ImprovedPrompt": "背景已经足以完成指定任务；生产场景还应提供事实来源标识。",
+    "Run": true
+  },
+  {
+    "Id": "VAR-GOAL-0",
+    "Category": "目标变量",
+    "Objective": "观察宽泛目标产生的输出",
+    "SystemPrompt": "",
+    "Prompt": "目标：处理以下信息。\n背景：1. 课程目录已经完成；2. 王宁需要在 2026-09-20 前完成复核；3. 材料仅用于内部试讲，受众是刚接触 LLM 安全的新同事。\n输出格式：使用一段话。",
+    "ExpectedBehavior": "输出可能相关，但任务动作和验收重点不明确；记录它是否覆盖进展、下一步、负责人和日期。",
+    "Evaluation": "人工检查四个要点和是否出现无来源扩展，不因语言流畅直接判为完成任务。",
+    "ImprovedPrompt": "把目标改成可观察动作并列出必须覆盖的信息。",
+    "Run": true
+  },
+  {
+    "Id": "VAR-GOAL-1",
+    "Category": "目标变量",
+    "Objective": "观察可验收目标对覆盖度的影响",
+    "SystemPrompt": "",
+    "Prompt": "目标：为项目经理总结当前进展，并在下一步中明确写出负责人和截止日期。\n背景：1. 课程目录已经完成；2. 王宁需要在 2026-09-20 前完成复核；3. 材料仅用于内部试讲，受众是刚接触 LLM 安全的新同事。\n输出格式：使用一段话。",
+    "ExpectedBehavior": "一段话中覆盖课程目录完成、下一步复核、负责人王宁和截止日期 2026-09-20。",
+    "Evaluation": "逐项检查四个必需信息，并检查是否增加输入中不存在的事实。",
+    "ImprovedPrompt": "若需自动评分，可进一步改用固定字段的 JSON。",
+    "Run": true
+  },
+  {
+    "Id": "VAR-CONSTRAINT-0",
+    "Category": "约束变量",
+    "Objective": "观察没有输出约束时的结构和边界",
+    "SystemPrompt": "",
+    "Prompt": "目标：为项目经理总结当前进展，并指出下一步负责人和截止日期。\n背景：1. 课程目录已经完成；2. 王宁需要在 2026-09-20 前完成复核；3. 材料仅用于内部试讲，受众是刚接触 LLM 安全的新同事。",
+    "ExpectedBehavior": "内容应与背景相关；记录输出结构、长度、额外信息和四个关键事实的覆盖情况。",
+    "Evaluation": "人工检查内容覆盖和无来源扩展；本版本不要求特定格式。",
+    "ImprovedPrompt": "加入可解析格式、字段、禁项和失败处理规则。",
+    "Run": true
+  },
+  {
+    "Id": "VAR-CONSTRAINT-1",
+    "Category": "约束变量",
+    "Objective": "观察加入格式、字段和禁项约束后的结构",
+    "SystemPrompt": "",
+    "Prompt": "目标：为项目经理总结当前进展，并指出下一步负责人和截止日期。\n背景：1. 课程目录已经完成；2. 王宁需要在 2026-09-20 前完成复核；3. 材料仅用于内部试讲，受众是刚接触 LLM 安全的新同事。\n约束：只输出一个合法 JSON 对象，字段必须且只能为 summary 和 next_step；next_step 必须同时包含负责人和 YYYY-MM-DD 日期；不得使用 Markdown 代码围栏，不得添加背景中没有的事实。",
+    "ExpectedBehavior": "输出可解析 JSON，仅含指定字段；包含王宁和日期，不出现无来源事实。",
+    "Evaluation": "运行 JSON 解析并检查字段集合、负责人、日期、代码围栏和新增事实。",
+    "ImprovedPrompt": "生产场景应增加 JSON Schema 并由应用强制校验。",
+    "Run": true
+  }
+]

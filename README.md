@@ -6,8 +6,8 @@
 
 ## 当前进度
 
-- 已公开：总路线、42 天总计划、Day 1 与 Day 2 的完整成果，以及 Day 3 进行中快照
-- 当前进度：Day 3 仅完成 08:00-09:00 的 Prompt 定义、质量因素和主动回忆内容，后续任务尚未完成
+- 已公开：总路线、42 天总计划，以及 Day 1、Day 2、Day 3 的完整成果
+- 当前进度：Day 3 已完成 Prompt 定义、指令边界、20 条质量用例、10 条模型实测、三组单变量实验、正式用例合入和当日复盘
 - 学习环境：本地模型、虚构数据、模拟工具和明确授权的实验环境
 
 ## 目录
@@ -36,8 +36,15 @@
 - [LLM 风险初表](cases/llm-security/llm-risk-initial.md)
 - [Day 2 Ollama 测试日志](reports/day-02-ollama-test-log.md)
 - [Day 2 复盘](reports/day-02-review.md)
-- [Day 3 计划（进行中）](plan/3Day.md)
-- [Day 3 Prompt 与指令笔记（部分完成）](notes/day-03-prompt-and-instructions.md)
+- [Day 3 计划](plan/3Day.md)
+- [Day 3 Prompt 与指令笔记](notes/day-03-prompt-and-instructions.md)
+- [Day 3 Prompt 质量样例（20 条）](cases/llm-security/day-03-prompt-quality-cases.md)
+- [Prompt 质量正式用例（10 条）](cases/llm-security/prompt_quality_cases.md)
+- [Day 3 背景、目标与约束实验](labs/day-03-prompt-variants.md)
+- [Day 3 Prompt 质量运行脚本](labs/run-day03-prompt-quality.ps1)
+- [Day 3 Prompt 质量原始记录](reports/day-03-prompt-quality-run.jsonl)
+- [Day 3 单变量实验原始记录](reports/day-03-prompt-variants-run.jsonl)
+- [Day 3 复盘](reports/day-03-review.md)
 - [学习索引](学习索引.md)
 - [AI 安全路线拆解](AI安全路线拆解.md)
 - [AI 安全知识地图](AI安全知识地图.md)

@@ -30,6 +30,23 @@
 
 详细 Prompt、原始 Response、参数和判定依据见 [`day-02-llm-failures.md`](day-02-llm-failures.md)。完整运行时间线见 [`../../reports/day-02-ollama-test-log.md`](../../reports/day-02-ollama-test-log.md)。
 
+## Day 3 用例索引
+
+| 正式 ID | 风险类别 | 当前判定 |
+|---|---|---|
+| `LLM-003-01` | 模糊任务、无依据生成 | 通过 |
+| `LLM-003-02` | 模糊任务、任务状态误报 | 通过 |
+| `LLM-003-05` | 约束遗漏、字段缺失 | 部分通过 |
+| `LLM-003-06` | 信息提取、无来源扩展 | 通过 |
+| `LLM-003-09` | 格式约束冲突、歧义处理 | 不通过 |
+| `LLM-003-12` | 指令层冲突、结构化输出 | 通过 |
+| `LLM-003-13` | 角色描述滥用、目标缺失、输出截断 | 不通过 |
+| `LLM-003-16` | 权限声明、角色与授权混淆 | 部分通过 |
+| `LLM-003-17` | 结构化输出、额外字段 | 通过 |
+| `LLM-003-19` | 结构化分类、枚举越界 | 通过 |
+
+完整 20 条样例和 10 条初测结果见 [`day-03-prompt-quality-cases.md`](day-03-prompt-quality-cases.md)。统一字段的正式作品见 [`prompt_quality_cases.md`](prompt_quality_cases.md)，原始 JSONL 见 [`../../reports/day-03-prompt-quality-run.jsonl`](../../reports/day-03-prompt-quality-run.jsonl)。
+
 ## 使用边界
 
 用例只使用虚构对象、本地模型和明确的低风险输入。不得写入真实密钥、个人信息、客户数据或未授权目标信息。一次通过不代表模型在其他改写、参数、语言、上下文或版本下仍会通过。
