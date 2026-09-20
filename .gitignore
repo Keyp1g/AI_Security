@@ -51,3 +51,13 @@ labs/day03-*.json
 !labs/day03-prompt-variants.json
 labs/run-day03-*.ps1
 !labs/run-day03-prompt-quality.ps1
+
+# Day 4 theory-only release boundary
+notes/day-04-*.md
+!notes/day-04-hallucination-bias.md
+reports/day-04-*
+cases/llm-security/day-04-*.md
+cases/llm-security/hallucination_bias_cases.md
+labs/day-04-*.md
+labs/day04-*.json
+labs/run-day04-*.ps1
