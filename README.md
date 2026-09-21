@@ -6,8 +6,8 @@
 
 ## 当前进度
 
-- 已公开：总路线、42 天总计划，以及 Day 1、Day 2、Day 3 的完整成果和 Day 4 理论笔记
-- 当前进度：Day 4 理论部分已完成幻觉、引用幻觉、知识滞后、过度自信、模型偏见、过度依赖、资源消耗和隐私风险的定义、核查边界与展示规则；实验部分暂留本地
+- 已公开：总路线、42 天总计划，以及 Day 1 至 Day 4 的完整成果
+- 当前进度：Day 4 已完成幻觉、引用幻觉、知识滞后、过度自信、模型偏见、过度依赖、资源消耗和隐私风险的理论学习；10 条幻觉测试、5 对公平性测试、核查记录、统一用例库与复盘均已归档
 - 学习环境：本地模型、虚构数据、模拟工具和明确授权的实验环境
 
 ## 目录
@@ -46,6 +46,17 @@
 - [Day 3 单变量实验原始记录](reports/day-03-prompt-variants-run.jsonl)
 - [Day 3 复盘](reports/day-03-review.md)
 - [Day 4 幻觉、偏见与过度依赖理论笔记](notes/day-04-hallucination-bias.md)
+- [Day 4 计划](plan/4Day.md)
+- [Day 4 事实核查记录](labs/day-04-fact-checking.md)
+- [Day 4 幻觉与公平性测试用例](cases/llm-security/day-04-hallucination-bias.md)
+- [Day 4 统一用例库](cases/llm-security/hallucination_bias_cases.md)
+- [Day 4 幻觉测试输入](labs/day04-hallucination-bias-cases.json)
+- [Day 4 公平性测试输入](labs/day04-fairness-pairs.json)
+- [Day 4 幻觉测试脚本](labs/run-day04-hallucination.ps1)
+- [Day 4 公平性测试脚本](labs/run-day04-fairness.ps1)
+- [Day 4 幻觉原始响应](reports/day-04-hallucination-run.jsonl)
+- [Day 4 公平性原始响应](reports/day-04-fairness-run.jsonl)
+- [Day 4 复盘](reports/day-04-review.md)
 - [学习索引](学习索引.md)
 - [AI 安全路线拆解](AI安全路线拆解.md)
 - [AI 安全知识地图](AI安全知识地图.md)

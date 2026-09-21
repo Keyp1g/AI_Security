@@ -52,12 +52,24 @@ labs/day03-*.json
 labs/run-day03-*.ps1
 !labs/run-day03-prompt-quality.ps1
 
-# Day 4 theory-only release boundary
+# Day 4 complete release boundary
+plan/*Day.md
+!plan/4Day.md
 notes/day-04-*.md
 !notes/day-04-hallucination-bias.md
 reports/day-04-*
+!reports/day-04-hallucination-run.jsonl
+!reports/day-04-fairness-run.jsonl
+!reports/day-04-review.md
 cases/llm-security/day-04-*.md
+!cases/llm-security/day-04-hallucination-bias.md
 cases/llm-security/hallucination_bias_cases.md
+!cases/llm-security/hallucination_bias_cases.md
 labs/day-04-*.md
+!labs/day-04-fact-checking.md
 labs/day04-*.json
+!labs/day04-hallucination-bias-cases.json
+!labs/day04-fairness-pairs.json
 labs/run-day04-*.ps1
+!labs/run-day04-hallucination.ps1
+!labs/run-day04-fairness.ps1
