@@ -73,3 +73,11 @@ labs/day04-*.json
 labs/run-day04-*.ps1
 !labs/run-day04-hallucination.ps1
 !labs/run-day04-fairness.ps1
+
+# Day 5 morning theory release boundary
+notes/day-05-*.md
+!notes/day-05-prompt-workflow.md
+labs/day-05-*.md
+!labs/day-05-template-evaluation.md
+reports/day-05-*
+cases/llm-security/day-05-*.md

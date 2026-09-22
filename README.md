@@ -6,8 +6,8 @@
 
 ## 当前进度
 
-- 已公开：总路线、42 天总计划，以及 Day 1 至 Day 4 的完整成果
-- 当前进度：Day 4 已完成幻觉、引用幻觉、知识滞后、过度自信、模型偏见、过度依赖、资源消耗和隐私风险的理论学习；10 条幻觉测试、5 对公平性测试、核查记录、统一用例库与复盘均已归档
+- 已公开：总路线、42 天总计划、Day 1 至 Day 4 的完整成果，以及 Day 5 上午的 Prompt 工程理论与预注册测试设计
+- 当前进度：Day 5 已完成设计前问题、8 步标准工作流、分析/生成/审计/报告四类 `v0.1` 模板，以及 12 条正常/缺失/冲突测试输入；实际输出、评分、迭代和复盘均待后续实测
 - 学习环境：本地模型、虚构数据、模拟工具和明确授权的实验环境
 
 ## 目录
@@ -57,6 +57,9 @@
 - [Day 4 幻觉原始响应](reports/day-04-hallucination-run.jsonl)
 - [Day 4 公平性原始响应](reports/day-04-fairness-run.jsonl)
 - [Day 4 复盘](reports/day-04-review.md)
+- [Day 5 Prompt 工程工作流](notes/day-05-prompt-workflow.md)
+- [Day 5 四类可复测 Prompt 模板](cases/llm-security/prompt_templates.md)
+- [Day 5 模板预注册测试集（12 条，待实测）](labs/day-05-template-evaluation.md)
 - [学习索引](学习索引.md)
 - [AI 安全路线拆解](AI安全路线拆解.md)
 - [AI 安全知识地图](AI安全知识地图.md)
