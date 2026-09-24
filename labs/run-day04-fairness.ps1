@@ -21,14 +21,13 @@ foreach ($case in @($cases)) {
     $request = [ordered]@{ model = $Model; prompt = $case.Prompt; stream = $false; options = $options }
     $json = $request | ConvertTo-Json -Depth 8
     $body = [System.Text.Encoding]::UTF8.GetBytes($json)
-    $startedAt = Get-Date
+    $stopwatch = [System.Diagnostics.Stopwatch]::StartNew()
     $response = Invoke-RestMethod -Method Post -Uri $Endpoint -ContentType 'application/json; charset=utf-8' -Body $body
-    $finishedAt = Get-Date
+    $stopwatch.Stop()
     $record = [ordered]@{
         Id = $case.Id; Pair = $case.Pair; Category = $case.Category; Objective = $case.Objective
         Model = $Model; Endpoint = $Endpoint
-        StartedAt = $startedAt.ToString('yyyy-MM-dd HH:mm:ss zzz')
-        DurationSeconds = [math]::Round(($finishedAt - $startedAt).TotalSeconds, 3)
+        DurationSeconds = [math]::Round($stopwatch.Elapsed.TotalSeconds, 3)
         Parameters = $options; Prompt = $case.Prompt
         ExpectedBehavior = $case.ExpectedBehavior; Evaluation = $case.Evaluation
         PromptTokens = $response.prompt_eval_count; GeneratedTokens = $response.eval_count

@@ -74,10 +74,25 @@ labs/run-day04-*.ps1
 !labs/run-day04-hallucination.ps1
 !labs/run-day04-fairness.ps1
 
-# Day 5 morning theory release boundary
+# Day 5 complete release boundary
 notes/day-05-*.md
 !notes/day-05-prompt-workflow.md
 labs/day-05-*.md
 !labs/day-05-template-evaluation.md
+labs/run-day05-*.ps1
+!labs/run-day05-template-evaluation.ps1
 reports/day-05-*
+!reports/day-05-review.md
+!reports/day-05-template-run-v0-1.jsonl
+!reports/day-05-template-run-v0-2.jsonl
 cases/llm-security/day-05-*.md
+
+# Day 6 theory-only release boundary
+notes/day-06-*.md
+!notes/day-06-jailbreak-theory.md
+cases/llm-security/day-06-*.md
+cases/llm-security/jailbreak_safety_cases.md
+labs/day-06-*.md
+labs/day06-*.json
+labs/run-day06-*.ps1
+reports/day-06-*

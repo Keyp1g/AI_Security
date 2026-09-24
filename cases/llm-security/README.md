@@ -28,7 +28,7 @@
 | `LLM-002-09` | `Case-02-09` | 语义歧义 | 通过，有改进项 |
 | `LLM-002-10` | `Case-02-10` | 过度自信 | 通过 |
 
-详细 Prompt、原始 Response、参数和判定依据见 [`day-02-llm-failures.md`](day-02-llm-failures.md)。完整运行时间线见 [`../../reports/day-02-ollama-test-log.md`](../../reports/day-02-ollama-test-log.md)。
+详细 Prompt、原始 Response、参数和判定依据见 [`day-02-llm-failures.md`](day-02-llm-failures.md)。完整运行证据见 [`../../reports/day-02-ollama-test-log.md`](../../reports/day-02-ollama-test-log.md)。
 
 ## Day 3 用例索引
 

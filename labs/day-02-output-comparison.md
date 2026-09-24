@@ -1,6 +1,6 @@
 # 第 2 天：LLM 输出对比实验
 
-> 完成日期：2026-09-16  
+> 阶段：Day 2
 > 模型：`qwen2.5:7b`  
 > 接口：本地 Ollama `http://127.0.0.1:11434/api/generate`  
 > 复现脚本：`labs/run-day02-output-comparison.ps1`

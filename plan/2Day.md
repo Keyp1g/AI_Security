@@ -1,13 +1,13 @@
 # 第 2 天：理解 LLM 基本概念
 
-> 日期：2026-09-11  
-> 学习时间：08:00-18:00，12:00-13:00 午休，净学习/实践 9 小时  
+> 阶段：Day 2
+> 学习结构：9 个学习/实践阶段，另设休息阶段。
 > 对应总计划：第 2 天“理解 LLM 基本概念”  
 > 今日目标：建立从 Prompt 到 Response 的可解释心智模型，并用可复现记录证明 LLM 输出具有概率性、上下文依赖和安全风险。
 
 ## 一、今日完成标准
 
-18:00 前完成并保存以下产出：
+本日结束前完成并保存以下产出：
 
 - [x] `notes/day-02-llm-basics.md`：完成教材摘录、术语定义、发展时间线和流程图。
 - [x] `labs/day-02-output-comparison.md`：完成同一问题 5 次输出对比及变量分析。
@@ -27,7 +27,7 @@
 建议在 PowerShell 中确认文件和行号：
 
 ```powershell
-$book = 'D:\AI\AI_Security\theAIMythbook-1.0.1\theAIMythbook-1.0.1\README.md'
+$book = '<repo-root>\theAIMythbook-1.0.1\theAIMythbook-1.0.1\README.md'
 Select-String -LiteralPath $book -Pattern '^## 大模型的前世今生篇$'
 Get-Content -LiteralPath $book -Encoding utf8 | Select-Object -Skip 867 -First 310
 ```
@@ -40,7 +40,7 @@ Get-Content -LiteralPath $book -Encoding utf8 | Select-Object -Skip 867 -First 3
 
 ## 三、逐小时执行任务
 
-### 08:00-09:00：阅读大模型发展脉络
+### 阶段 1：阅读大模型发展脉络
 
 #### 具体动作
 
@@ -59,7 +59,7 @@ Get-Content -LiteralPath $book -Encoding utf8 | Select-Object -Skip 867 -First 3
 - [x] 能用 2 分钟解释 Transformer、预训练和大模型应用爆发之间的关系。
 - [x] 没有把 AGI/ASI 的假设性描述写成已实现事实。
 
-### 09:00-10:00：整理 LLM 核心术语
+### 阶段 2：整理 LLM 核心术语
 
 #### 具体动作
 
@@ -87,7 +87,7 @@ Get-Content -LiteralPath $book -Encoding utf8 | Select-Object -Skip 867 -First 3
 - [x] 能明确区分“上下文学习”和“微调”：前者不更新模型参数，后者会改变参数。
 - [x] 至少标出 2 个尚未掌握的术语，不为了通过验收而虚构掌握程度。
 
-### 10:00-11:00：绘制 LLM 输入到输出流程
+### 阶段 3：绘制 LLM 输入到输出流程
 
 #### 具体动作
 
@@ -126,7 +126,7 @@ Prompt
 - [x] 至少标出输入侧、模型侧、输出侧各一个风险点。
 - [x] 能解释：模型通常是在生成最可能的后续 Token，不是从可信数据库中检索唯一答案。
 
-### 11:00-12:00：收集 10 个 LLM 失败样例
+### 阶段 4：收集 10 个 LLM 失败样例
 
 #### 具体动作
 
@@ -168,11 +168,11 @@ Prompt
 - [x] 每个样例都有输入、期望行为、实际行为/待实测状态和证据字段。
 - [x] 不把模型拒答本身直接判定为安全；要检查是否拒答正确、是否过度拒答。
 
-### 12:00-13:00：午休
+### 休息阶段：午休
 
 不安排学习任务。下午开始前只检查上午三个小时的文件已经保存，并确认没有把真实敏感信息放入 Prompt 或笔记。
 
-### 13:00-14:00：同一问题做 5 次输出对比
+### 阶段 5：同一问题做 5 次输出对比
 
 #### 具体动作
 
@@ -201,7 +201,7 @@ Prompt
 - [x] 保留原始输出，不能只记录总结。
 - [x] 结论必须区分“观察到差异”和“未观察到差异”；如果 temperature=0 仍有差异，也要记录可能的服务端因素。
 
-### 14:00-15:00：分析温度、上下文和指令清晰度
+### 阶段 6：分析温度、上下文和指令清晰度
 
 #### 具体动作
 
@@ -227,7 +227,7 @@ Prompt
 - [x] 至少写出一个限制条件，例如样本次数少、模型版本未知或客户端隐藏了参数。
 - [x] 能解释：temperature 影响采样倾向，但不能替代事实核查、权限控制或输出安全。
 
-### 15:00-16:00：建立 LLM 风险初表
+### 阶段 7：建立 LLM 风险初表
 
 #### 具体动作
 
@@ -253,14 +253,14 @@ Prompt
 - [x] 控制措施能被后续实验验证，不能只写“加强安全”。
 - [x] 至少选出 3 条风险转为作品 1 的正式测试用例。
 
-### 16:00-17:00：合入作品 1：LLM 安全测试用例库
+### 阶段 8：合入作品 1：LLM 安全测试用例库
 
 #### 具体动作
 
 1. 检查 `cases/llm-security` 是否存在；不存在时执行：
 
 ```powershell
-$dir = 'D:\AI\AI_Security\cases\llm-security'
+$dir = '<repo-root>\cases\llm-security'
 if (-not (Test-Path -LiteralPath $dir)) {
     New-Item -ItemType Directory -Path $dir -Force | Out-Null
 }
@@ -299,7 +299,7 @@ if (-not (Test-Path -LiteralPath $dir)) {
 - [x] 测试输入、期望行为和判定规则可以交给另一个人复测。
 - [x] 作品 1 中没有真实密钥、真实个人信息或未授权目标信息。
 
-### 17:00-18:00：复盘与准备第 3 天
+### 阶段 9：复盘与准备第 3 天
 
 #### 具体动作
 
@@ -347,7 +347,7 @@ if (-not (Test-Path -LiteralPath $dir)) {
 ## 五、结束前快速检查
 
 ```powershell
-$root = 'D:\AI\AI_Security'
+$root = '<repo-root>'
 $required = @(
     'notes\day-02-llm-basics.md',
     'labs\day-02-output-comparison.md',

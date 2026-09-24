@@ -1,6 +1,6 @@
 # 第 3 天：背景、目标与约束单变量实验
 
-> 实测日期：2026-09-18（America/New_York）
+> 阶段：Day 3
 > 模型：`qwen2.5:7b`
 > 接口：`http://127.0.0.1:11434/api/generate`
 > 参数：`temperature=0`、`top_p=1`、`seed=42`、`num_predict=256`

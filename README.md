@@ -6,8 +6,9 @@
 
 ## 当前进度
 
-- 已公开：总路线、42 天总计划、Day 1 至 Day 4 的完整成果，以及 Day 5 上午的 Prompt 工程理论与预注册测试设计
-- 当前进度：Day 5 已完成设计前问题、8 步标准工作流、分析/生成/审计/报告四类 `v0.1` 模板，以及 12 条正常/缺失/冲突测试输入；实际输出、评分、迭代和复盘均待后续实测
+- 已公开：总路线、分阶段学习计划、Day 1 至 Day 5 的完整学习成果，以及 Day 6 的 Jailbreak 理论知识
+- 当前进度：Day 5 已完成四类 Prompt 模板、12 条预注册用例、两轮本地模型实测与失败复盘；Day 6 当前只公开安全对齐、Jailbreak、Prompt Injection 区别、风险分类和应用层防护理论
+- 发布边界：Day 6 的测试样例、实验脚本、模型响应、评分、原始日志与实验复盘继续保留在本地，不随本次发布上线
 - 学习环境：本地模型、虚构数据、模拟工具和明确授权的实验环境
 
 ## 目录
@@ -59,7 +60,12 @@
 - [Day 4 复盘](reports/day-04-review.md)
 - [Day 5 Prompt 工程工作流](notes/day-05-prompt-workflow.md)
 - [Day 5 四类可复测 Prompt 模板](cases/llm-security/prompt_templates.md)
-- [Day 5 模板预注册测试集（12 条，待实测）](labs/day-05-template-evaluation.md)
+- [Day 5 模板测试与两轮评估](labs/day-05-template-evaluation.md)
+- [Day 5 可复现实验脚本](labs/run-day05-template-evaluation.ps1)
+- [Day 5 v0.1 原始响应](reports/day-05-template-run-v0-1.jsonl)
+- [Day 5 v0.2 原始响应](reports/day-05-template-run-v0-2.jsonl)
+- [Day 5 复盘](reports/day-05-review.md)
+- [Day 6 Jailbreak 基础理论](notes/day-06-jailbreak-theory.md)
 - [学习索引](学习索引.md)
 - [AI 安全路线拆解](AI安全路线拆解.md)
 - [AI 安全知识地图](AI安全知识地图.md)

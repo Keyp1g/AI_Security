@@ -1,6 +1,6 @@
 # Prompt 质量测试用例库
 
-> 合入日期：2026-09-18
+> 阶段：Day 3
 > 来源：第 3 天 20 条 Prompt 质量样例中已实测的 10 条
 > 模型：本地 `qwen2.5:7b`
 > 参数：`temperature=0`、`top_p=1`、`seed=42`、`num_predict=256`

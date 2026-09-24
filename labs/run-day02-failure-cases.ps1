@@ -38,16 +38,15 @@ $cases[5].Prompt = $cases[5].Prompt.Replace('{{FILLER}}', $filler)
 
 foreach ($caseNumber in $From..$To) {
     $case = $cases[$caseNumber - 1]
-    $startedAt = Get-Date
+    $stopwatch = [System.Diagnostics.Stopwatch]::StartNew()
     $responseLines = $case.Prompt | & $OllamaExe run $Model --nowordwrap
     $exitCode = $LASTEXITCODE
-    $finishedAt = Get-Date
+    $stopwatch.Stop()
 
     [pscustomobject]@{
         Id = $case.Id
         Model = $Model
-        StartedAt = $startedAt.ToString('yyyy-MM-dd HH:mm:ss zzz')
-        DurationSeconds = [math]::Round(($finishedAt - $startedAt).TotalSeconds, 3)
+        DurationSeconds = [math]::Round($stopwatch.Elapsed.TotalSeconds, 3)
         PromptCharacters = $case.Prompt.Length
         ExitCode = $exitCode
         Response = (($responseLines -join "`n").TrimEnd())

@@ -48,9 +48,9 @@ foreach ($case in $selected) {
 
     $json = $request | ConvertTo-Json -Depth 8
     $body = [System.Text.Encoding]::UTF8.GetBytes($json)
-    $startedAt = Get-Date
+    $stopwatch = [System.Diagnostics.Stopwatch]::StartNew()
     $response = Invoke-RestMethod -Method Post -Uri $Endpoint -ContentType 'application/json; charset=utf-8' -Body $body
-    $finishedAt = Get-Date
+    $stopwatch.Stop()
 
     $record = [ordered]@{
         Id = $case.Id
@@ -58,8 +58,7 @@ foreach ($case in $selected) {
         Objective = $case.Objective
         Model = $Model
         Endpoint = $Endpoint
-        StartedAt = $startedAt.ToString('yyyy-MM-dd HH:mm:ss zzz')
-        DurationSeconds = [math]::Round(($finishedAt - $startedAt).TotalSeconds, 3)
+        DurationSeconds = [math]::Round($stopwatch.Elapsed.TotalSeconds, 3)
         Parameters = $options
         SystemPrompt = $case.SystemPrompt
         Prompt = $case.Prompt

@@ -1,7 +1,6 @@
 # 第 3 天：Prompt 质量测试样例
 
-> 用例设计日期：2026-09-18
-> 实测日期：2026-09-18（America/New_York）
+> 阶段：Day 3
 > 范围：20 条虚构、低风险用例；五类各 4 条
 > 实测范围：每类 2 条，共 10 条
 > 原始证据：`reports/day-03-prompt-quality-run.jsonl`

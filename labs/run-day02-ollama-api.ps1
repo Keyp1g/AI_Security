@@ -56,20 +56,19 @@ foreach ($caseNumber in $From..$To) {
 
     $json = $request | ConvertTo-Json -Depth 5
     $body = [System.Text.Encoding]::UTF8.GetBytes($json)
-    $startedAt = Get-Date
+    $stopwatch = [System.Diagnostics.Stopwatch]::StartNew()
     $response = Invoke-RestMethod `
         -Method Post `
         -Uri $Endpoint `
         -ContentType 'application/json; charset=utf-8' `
         -Body $body
-    $finishedAt = Get-Date
+    $stopwatch.Stop()
 
     [pscustomobject]@{
         Id = $case.Id
         Model = $Model
         Endpoint = $Endpoint
-        StartedAt = $startedAt.ToString('yyyy-MM-dd HH:mm:ss zzz')
-        DurationSeconds = [math]::Round(($finishedAt - $startedAt).TotalSeconds, 3)
+        DurationSeconds = [math]::Round($stopwatch.Elapsed.TotalSeconds, 3)
         PromptCharacters = $case.Prompt.Length
         PromptTokens = $response.prompt_eval_count
         GeneratedTokens = $response.eval_count

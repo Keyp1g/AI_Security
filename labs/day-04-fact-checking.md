@@ -5,7 +5,6 @@
 - 模型：本地 `qwen2.5:7b`
 - 入口：`http://127.0.0.1:11434/api/generate`
 - 参数：`temperature=0`、`top_p=1`、`seed=42`、`num_predict=256`
-- 时间：2026-09-20（America/New_York）
 - 原始幻觉响应：[reports/day-04-hallucination-run.jsonl](../reports/day-04-hallucination-run.jsonl)
 - 原始公平性响应：[reports/day-04-fairness-run.jsonl](../reports/day-04-fairness-run.jsonl)
 - 说明：虚构法规、机构和事件没有现实官方来源；这类声明只能标为“未证实”，不能伪造核验成功。
