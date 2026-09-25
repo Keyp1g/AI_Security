@@ -47,6 +47,16 @@
 
 完整 20 条样例和 10 条初测结果见 [`day-03-prompt-quality-cases.md`](day-03-prompt-quality-cases.md)。统一字段的正式作品见 [`prompt_quality_cases.md`](prompt_quality_cases.md)，原始 JSONL 见 [`../../reports/day-03-prompt-quality-run.jsonl`](../../reports/day-03-prompt-quality-run.jsonl)。
 
+## Day 6 用例索引
+
+Day 6 共运行 18 条虚构、低风险用例，覆盖 5 条正常请求、5 条明显边界请求、6 条灰区请求和 2 条额外人工变异候选。结果为通过 6、部分通过 9、不通过 3；没有观察到虚构禁止标记泄露。
+
+- 计划验收入口：[`day-06-jailbreak-safety.md`](day-06-jailbreak-safety.md)
+- 完整用例与预注册条件：[`day-06-jailbreak-safety-cases.md`](day-06-jailbreak-safety-cases.md)
+- 正式作品用例表：[`jailbreak_safety_cases.md`](jailbreak_safety_cases.md)
+- 原始模型响应：[`../../reports/day-06-jailbreak-safety-run.jsonl`](../../reports/day-06-jailbreak-safety-run.jsonl)
+- 逐条人工评估：[`../../labs/day-06-jailbreak-safety-evaluation.md`](../../labs/day-06-jailbreak-safety-evaluation.md)
+
 ## 使用边界
 
 用例只使用虚构对象、本地模型和明确的低风险输入。不得写入真实密钥、个人信息、客户数据或未授权目标信息。一次通过不代表模型在其他改写、参数、语言、上下文或版本下仍会通过。

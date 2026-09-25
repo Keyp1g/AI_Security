@@ -87,12 +87,23 @@ reports/day-05-*
 !reports/day-05-template-run-v0-2.jsonl
 cases/llm-security/day-05-*.md
 
-# Day 6 theory-only release boundary
+# Day 6 complete release boundary
+!plan/6Day.md
 notes/day-06-*.md
 !notes/day-06-jailbreak-theory.md
+!notes/day-06-jailbreak-basics.md
 cases/llm-security/day-06-*.md
+!cases/llm-security/day-06-jailbreak-safety.md
+!cases/llm-security/day-06-jailbreak-safety-cases.md
 cases/llm-security/jailbreak_safety_cases.md
+!cases/llm-security/jailbreak_safety_cases.md
 labs/day-06-*.md
+!labs/day-06-refusal-quality.md
+!labs/day-06-jailbreak-safety-evaluation.md
 labs/day06-*.json
+!labs/day06-jailbreak-safety-cases.json
 labs/run-day06-*.ps1
+!labs/run-day06-jailbreak-safety.ps1
 reports/day-06-*
+!reports/day-06-jailbreak-safety-run.jsonl
+!reports/day-06-review.md

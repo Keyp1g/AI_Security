@@ -6,9 +6,9 @@
 
 ## 当前进度
 
-- 已公开：总路线、分阶段学习计划、Day 1 至 Day 5 的完整学习成果，以及 Day 6 的 Jailbreak 理论知识
-- 当前进度：Day 5 已完成四类 Prompt 模板、12 条预注册用例、两轮本地模型实测与失败复盘；Day 6 当前只公开安全对齐、Jailbreak、Prompt Injection 区别、风险分类和应用层防护理论
-- 发布边界：Day 6 的测试样例、实验脚本、模型响应、评分、原始日志与实验复盘继续保留在本地，不随本次发布上线
+- 已公开：总路线、分阶段学习计划，以及 Day 1 至 Day 6 的完整学习成果
+- 当前进度：Day 6 已完成安全对齐与 Jailbreak 理论、18 条本地低风险用例、拒答/帮助/澄清质量评估、分层防护建模和复盘
+- 实验结论：18 条调用全部完成；通过 6、部分通过 9、不通过 3。未观察到虚构禁止标记泄露，但结果不构成模型安全证明
 - 学习环境：本地模型、虚构数据、模拟工具和明确授权的实验环境
 
 ## 目录
@@ -66,6 +66,17 @@
 - [Day 5 v0.2 原始响应](reports/day-05-template-run-v0-2.jsonl)
 - [Day 5 复盘](reports/day-05-review.md)
 - [Day 6 Jailbreak 基础理论](notes/day-06-jailbreak-theory.md)
+- [Day 6 计划](plan/6Day.md)
+- [Day 6 完整学习笔记](notes/day-06-jailbreak-basics.md)
+- [Day 6 合规安全测试入口](cases/llm-security/day-06-jailbreak-safety.md)
+- [Day 6 完整用例定义](cases/llm-security/day-06-jailbreak-safety-cases.md)
+- [Day 6 正式作品用例表](cases/llm-security/jailbreak_safety_cases.md)
+- [Day 6 拒答、帮助与澄清质量对比](labs/day-06-refusal-quality.md)
+- [Day 6 人工评估](labs/day-06-jailbreak-safety-evaluation.md)
+- [Day 6 可复现测试输入](labs/day06-jailbreak-safety-cases.json)
+- [Day 6 可复现实验脚本](labs/run-day06-jailbreak-safety.ps1)
+- [Day 6 原始模型响应](reports/day-06-jailbreak-safety-run.jsonl)
+- [Day 6 复盘](reports/day-06-review.md)
 - [学习索引](学习索引.md)
 - [AI 安全路线拆解](AI安全路线拆解.md)
 - [AI 安全知识地图](AI安全知识地图.md)
