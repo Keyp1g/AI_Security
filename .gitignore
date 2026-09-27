@@ -8,6 +8,7 @@ theAIMythbook-1.0.1/
 # Local editor logs and machine-specific artifacts
 Typora_Hook_Log.txt
 plan/Typora_Hook_Log.txt
+__pycache__/
 
 # Publish daily plans and results only after their release scope is confirmed
 plan/*Day.md
@@ -33,6 +34,7 @@ Day 1.md
 
 # Local learning and publishing methodologies
 notes/learning-methodology.md
+learning-methodology.md
 GitHub上线方法论.md
 
 # Day 3 release boundary
@@ -107,3 +109,14 @@ labs/run-day06-*.ps1
 reports/day-06-*
 !reports/day-06-jailbreak-safety-run.jsonl
 !reports/day-06-review.md
+
+# Day 7 partial release boundary: review materials only
+notes/week-01-*.md
+!notes/week-01-inventory.md
+!notes/week-01-glossary.md
+labs/week-01-*.md
+!labs/week-01-self-test.md
+cases/llm-security/week-01-*.md
+!cases/llm-security/week-01-case-audit.md
+reports/week-01-*.md
+reports/week-02-*.md
