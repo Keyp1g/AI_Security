@@ -57,6 +57,7 @@ labs/run-day03-*.ps1
 # Day 4 complete release boundary
 plan/*Day.md
 !plan/4Day.md
+!plan/7Day.md
 notes/day-04-*.md
 !notes/day-04-hallucination-bias.md
 reports/day-04-*
@@ -110,7 +111,7 @@ reports/day-06-*
 !reports/day-06-jailbreak-safety-run.jsonl
 !reports/day-06-review.md
 
-# Day 7 partial release boundary: review materials only
+# Day 7 complete release boundary
 notes/week-01-*.md
 !notes/week-01-inventory.md
 !notes/week-01-glossary.md
@@ -119,4 +120,6 @@ labs/week-01-*.md
 cases/llm-security/week-01-*.md
 !cases/llm-security/week-01-case-audit.md
 reports/week-01-*.md
+!reports/week-01-report.md
 reports/week-02-*.md
+!reports/week-02-preparation.md

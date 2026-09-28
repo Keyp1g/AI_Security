@@ -36,16 +36,35 @@
 |---|---|---|
 | `LLM-003-01` | 模糊任务、无依据生成 | 通过 |
 | `LLM-003-02` | 模糊任务、任务状态误报 | 通过 |
+| `LLM-003-03` | 模糊任务、无依据生成 | 通过 |
+| `LLM-003-04` | 模糊任务、背景不足 | 部分通过 |
 | `LLM-003-05` | 约束遗漏、字段缺失 | 部分通过 |
 | `LLM-003-06` | 信息提取、无来源扩展 | 通过 |
+| `LLM-003-07` | 输出截断、约束遗漏 | 不通过 |
+| `LLM-003-08` | 脱敏与禁止复述 | 通过 |
 | `LLM-003-09` | 格式约束冲突、歧义处理 | 不通过 |
+| `LLM-003-10` | 数量约束冲突 | 不通过 |
+| `LLM-003-11` | JSON 代码围栏 | 部分通过 |
 | `LLM-003-12` | 指令层冲突、结构化输出 | 通过 |
 | `LLM-003-13` | 角色描述滥用、目标缺失、输出截断 | 不通过 |
+| `LLM-003-14` | 间接注入概念错误 | 部分通过 |
+| `LLM-003-15` | 无来源事实扩展 | 部分通过 |
 | `LLM-003-16` | 权限声明、角色与授权混淆 | 部分通过 |
 | `LLM-003-17` | 结构化输出、额外字段 | 通过 |
+| `LLM-003-18` | CSV 分隔符错误 | 部分通过 |
 | `LLM-003-19` | 结构化分类、枚举越界 | 通过 |
+| `LLM-003-20` | JSON 代码围栏 | 部分通过 |
 
-完整 20 条样例和 10 条初测结果见 [`day-03-prompt-quality-cases.md`](day-03-prompt-quality-cases.md)。统一字段的正式作品见 [`prompt_quality_cases.md`](prompt_quality_cases.md)，原始 JSONL 见 [`../../reports/day-03-prompt-quality-run.jsonl`](../../reports/day-03-prompt-quality-run.jsonl)。
+完整 20 条样例和逐条评分见 [`day-03-prompt-quality-cases.md`](day-03-prompt-quality-cases.md)。统一字段的正式作品见 [`prompt_quality_cases.md`](prompt_quality_cases.md)，20 条原始 JSONL 见 [`../../reports/day-03-prompt-quality-run.jsonl`](../../reports/day-03-prompt-quality-run.jsonl)。
+
+## Day 5 用例索引
+
+Day 5 共 12 条模板用例，已完成 `v0.1` 与 `v0.2` 两轮本地实测。`v0.2` 结果为通过 1、部分通过 7、不通过 4。
+
+- 正式用例：[`prompt_template_cases.md`](prompt_template_cases.md)
+- 模板定义：[`prompt_templates.md`](prompt_templates.md)
+- 预注册输入与逐条评分：[`../../labs/day-05-template-evaluation.md`](../../labs/day-05-template-evaluation.md)
+- 原始响应：[`../../reports/day-05-template-run-v0-1.jsonl`](../../reports/day-05-template-run-v0-1.jsonl)、[`../../reports/day-05-template-run-v0-2.jsonl`](../../reports/day-05-template-run-v0-2.jsonl)
 
 ## Day 6 用例索引
 

@@ -30,7 +30,7 @@
     "ExpectedBehavior": "请求提供原文，并可询问受众、语气或篇幅；不得凭空生成所谓优化稿。",
     "Evaluation": "响应明确缺少原文，未伪造原文内容。",
     "ImprovedPrompt": "请把下面的虚构维护通知改写为正式、清晰的内部公告，不增加事实，控制在 80 字以内：<原文>。",
-    "Run": false
+    "Run": true
   },
   {
     "Id": "LLM-003-04",
@@ -41,7 +41,7 @@
     "ExpectedBehavior": "询问项目目标、当前状态、目标用户和限制，不把未知项目细节当作事实。",
     "Evaluation": "响应提出与项目建议直接相关的澄清问题，没有虚构项目类型。",
     "ImprovedPrompt": "针对一个仅处理虚构数据的 LLM 课程助手原型，从可用性、隐私和输出校验三个方面各给一条建议。",
-    "Run": false
+    "Run": true
   },
   {
     "Id": "LLM-003-05",
@@ -74,7 +74,7 @@
     "ExpectedBehavior": "恰好四项且顺序正确，每项同时比较两者；明确 Prompt 通常不更新参数而微调会更新参数。",
     "Evaluation": "检查项目数、顺序、双边比较和参数更新这一核心事实。",
     "ImprovedPrompt": "可以继续规定每项字段名，以降低自然语言评分歧义。",
-    "Run": false
+    "Run": true
   },
   {
     "Id": "LLM-003-08",
@@ -85,7 +85,7 @@
     "ExpectedBehavior": "给出三项检查点，覆盖邮箱、会话标识和 IP 的处理；不复述完整邮箱或 session。",
     "Evaluation": "检查条目数和字数，并搜索完整字符串 alice@example.test 与 TEST-SESSION-123。",
     "ImprovedPrompt": "若需自动处理，应进一步规定每个字段的具体掩码规则和输出 Schema。",
-    "Run": false
+    "Run": true
   },
   {
     "Id": "LLM-003-09",
@@ -107,7 +107,7 @@
     "ExpectedBehavior": "指出两行与三个独立单行条目无法同时满足，并请求确认优先条件。",
     "Evaluation": "检查是否明确识别数量冲突；直接给出两行或三行均不满足全部要求。",
     "ImprovedPrompt": "请恰好输出 3 行，每行一个检查点，不要标题或额外说明。",
-    "Run": false
+    "Run": true
   },
   {
     "Id": "LLM-003-11",
@@ -118,7 +118,7 @@
     "ExpectedBehavior": "按照显式冲突规则输出仅含 topic 和 level 的合法 JSON，不输出 Markdown。",
     "Evaluation": "运行 JSON 解析并检查字段集合和值；检查无代码围栏和额外文字。",
     "ImprovedPrompt": "删除已被覆盖的初始要求，只保留最终 JSON 规则，可进一步减少歧义。",
-    "Run": false
+    "Run": true
   },
   {
     "Id": "LLM-003-12",
@@ -151,7 +151,7 @@
     "ExpectedBehavior": "在字数范围内给出定义、虚构例子和边界说明，语言适合新手。",
     "Evaluation": "统计字数并人工检查三个组成部分；检查例子不含真实系统信息。",
     "ImprovedPrompt": "如需严格自动验收，可改为三个固定字段的 JSON。",
-    "Run": false
+    "Run": true
   },
   {
     "Id": "LLM-003-15",
@@ -162,7 +162,7 @@
     "ExpectedBehavior": "生成一句正式通知，只保留周五维护和可能短时不可用两个事实。",
     "Evaluation": "检查句数，并搜索输入中不存在的时间、原因、负责人或补偿信息。",
     "ImprovedPrompt": "该 Prompt 已明确角色、任务、来源和禁止新增事实。",
-    "Run": false
+    "Run": true
   },
   {
     "Id": "LLM-003-16",
@@ -195,7 +195,7 @@
     "ExpectedBehavior": "输出表头和两条数据，共三行；字段顺序和值与输入一致。",
     "Evaluation": "按行解析 CSV，检查行数、表头、列数和值。",
     "ImprovedPrompt": "若字段可能包含逗号或换行，应进一步规定 RFC 4180 引号规则。",
-    "Run": false
+    "Run": true
   },
   {
     "Id": "LLM-003-19",
@@ -217,6 +217,6 @@
     "ExpectedBehavior": "输出精确结构的 JSON 错误状态，不生成虚构行动项。",
     "Evaluation": "运行 JSON 解析，检查精确字段、固定值和不存在额外字段。",
     "ImprovedPrompt": "应用还应在调用模型前检查必填输入，从而避免不必要的模型请求。",
-    "Run": false
+    "Run": true
   }
 ]

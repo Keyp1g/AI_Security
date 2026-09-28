@@ -6,10 +6,10 @@
 
 ## 当前进度
 
-- 已公开：总路线、分阶段学习计划、Day 1 至 Day 6 的完整学习成果，以及 Day 7 已完成的第 1 周复习材料
-- 当前进度：已完成 Day 1–6 证据盘点、16 项统一术语表、80 个逻辑输入的结构审计和 20 道自测题编写
-- 审计结论：80 个逻辑输入中 70 个已有实测证据、10 个明确待实测、32 个存在严格结构缺口；数量不替代证据质量
-- 发布边界：Day 7 计划、限时答题、薄弱点回查、周报和第 2 周准备尚未公开，不能据此视为 Day 7 全日完成
+- 已公开：总路线、分阶段学习计划，以及 Day 1 至 Day 7 的完整学习成果
+- 当前进度：已完成 Day 1–6 证据盘点、16 项统一术语表、20 道逐题自测、用例结构修补和第 1 周复盘
+- 审计结论：80 个逻辑输入均有实测证据和输入级唯一 ID，待实测与严格结构缺口均为 0；这不等于 80 条全部通过
+- 发布边界：Day 7 成果完整公开；Day 8 及后续实验仍留在本地，未开始的任务不计为完成
 - 学习环境：本地模型、虚构数据、模拟工具和明确授权的实验环境
 
 ## 目录
@@ -41,7 +41,7 @@
 - [Day 3 计划](plan/3Day.md)
 - [Day 3 Prompt 与指令笔记](notes/day-03-prompt-and-instructions.md)
 - [Day 3 Prompt 质量样例（20 条）](cases/llm-security/day-03-prompt-quality-cases.md)
-- [Prompt 质量正式用例（10 条）](cases/llm-security/prompt_quality_cases.md)
+- [Prompt 质量正式用例（20 条）](cases/llm-security/prompt_quality_cases.md)
 - [Day 3 背景、目标与约束实验](labs/day-03-prompt-variants.md)
 - [Day 3 Prompt 质量运行脚本](labs/run-day03-prompt-quality.ps1)
 - [Day 3 Prompt 质量原始记录](reports/day-03-prompt-quality-run.jsonl)
@@ -61,6 +61,7 @@
 - [Day 4 复盘](reports/day-04-review.md)
 - [Day 5 Prompt 工程工作流](notes/day-05-prompt-workflow.md)
 - [Day 5 四类可复测 Prompt 模板](cases/llm-security/prompt_templates.md)
+- [Day 5 Prompt 模板正式用例（12 条）](cases/llm-security/prompt_template_cases.md)
 - [Day 5 模板测试与两轮评估](labs/day-05-template-evaluation.md)
 - [Day 5 可复现实验脚本](labs/run-day05-template-evaluation.ps1)
 - [Day 5 v0.1 原始响应](reports/day-05-template-run-v0-1.jsonl)
@@ -78,10 +79,13 @@
 - [Day 6 可复现实验脚本](labs/run-day06-jailbreak-safety.ps1)
 - [Day 6 原始模型响应](reports/day-06-jailbreak-safety-run.jsonl)
 - [Day 6 复盘](reports/day-06-review.md)
+- [Day 7 计划与最终验收](plan/7Day.md)
 - [第 1 周学习盘点（Day 1–6）](notes/week-01-inventory.md)
 - [第 1 周统一术语表](notes/week-01-glossary.md)
 - [第 1 周 LLM 安全用例审计](cases/llm-security/week-01-case-audit.md)
 - [第 1 周自测题（20 题）](labs/week-01-self-test.md)
+- [第 1 周学习周报与周末复盘](reports/week-01-report.md)
+- [第 2 周本地实验准备清单](reports/week-02-preparation.md)
 - [学习索引](学习索引.md)
 - [AI 安全路线拆解](AI安全路线拆解.md)
 - [AI 安全知识地图](AI安全知识地图.md)
