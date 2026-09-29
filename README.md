@@ -6,10 +6,10 @@
 
 ## 当前进度
 
-- 已公开：总路线、分阶段学习计划，以及 Day 1 至 Day 7 的完整学习成果
+- 已公开：总路线、分阶段学习计划，以及 Day 1 至 Day 8 的完整学习成果
 - 当前进度：已完成 Day 1–6 证据盘点、16 项统一术语表、20 道逐题自测、用例结构修补和第 1 周复盘
 - 审计结论：80 个逻辑输入均有实测证据和输入级唯一 ID，待实测与严格结构缺口均为 0；这不等于 80 条全部通过
-- 发布边界：Day 7 成果完整公开；Day 8 及后续实验仍留在本地，未开始的任务不计为完成
+- 发布边界：Day 8 成果完整公开；调试中间版本、原始派生日志、教材副本和 Day 9 及后续内容仍留在本地
 - 学习环境：本地模型、虚构数据、模拟工具和明确授权的实验环境
 
 ## 目录
@@ -22,7 +22,7 @@
 | `cases/` | 结构化安全测试案例 |
 | `labs/` | 可运行实验及实验说明 |
 | `tools/` | 评测器和辅助脚本 |
-| `路线/` | 学习路线参考截图 |
+| `路线/` | 学习阶段与作品路径图 |
 
 ## 已公开内容
 
@@ -86,6 +86,13 @@
 - [第 1 周自测题（20 题）](labs/week-01-self-test.md)
 - [第 1 周学习周报与周末复盘](reports/week-01-report.md)
 - [第 2 周本地实验准备清单](reports/week-02-preparation.md)
+- [Day 8 计划](plan/8Day.md)
+- [Day 8 Prompt Injection 笔记](notes/day-08-prompt-injection.md)
+- [Day 8 直接注入实验](labs/day-08-direct-injection.md)
+- [Day 8 间接注入实验](labs/day-08-indirect-injection.md)
+- [Day 8 控制验证实验](labs/day-08-control-validation.md)
+- [Day 8 Prompt Injection 正式用例库（20 条）](cases/llm-security/prompt_injection_cases.md)
+- [Day 8 复盘与 Day 9 准备](reports/day-08-review.md)
 - [学习索引](学习索引.md)
 - [AI 安全路线拆解](AI安全路线拆解.md)
 - [AI 安全知识地图](AI安全知识地图.md)
@@ -97,6 +104,13 @@
 ## 更新方式
 
 每完成一个阶段再发布对应成果，保留计划、证据、卡点和复盘之间的对应关系。后续如果形成适合上游教材的修正或补充，会先与原内容区分，再考虑向上游仓库提交 Issue 或 Pull Request。
+
+## 文件命名约定
+
+- 计划文件沿用已有的 `NDay.md` 形式；笔记、实验说明和报告使用 `day-NN-topic` 形式。
+- 机器可读用例和运行脚本沿用仓库既有的 `dayNN-topic`、`run-dayNN-topic` 形式，避免与历史入口断链。
+- 正式用例库使用主题化 snake_case；文档夹具使用 `clean-NN`、`untrusted-NN` 等能表达信任属性的名称。
+- 路线图使用内容语义名称，不使用截图生成时间作为文件名。
 
 ## 安全边界
 

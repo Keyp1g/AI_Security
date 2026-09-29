@@ -3,6 +3,7 @@ model/
 
 # Local copy of the upstream textbook and other source materials
 theAIMythbook-1.0.1/
+大模型渗透测试：大语言模型安全防护教程/
 *.pdf
 
 # Local editor logs and machine-specific artifacts
@@ -123,3 +124,48 @@ reports/week-01-*.md
 !reports/week-01-report.md
 reports/week-02-*.md
 !reports/week-02-preparation.md
+
+# Day 8 complete release boundary
+!plan/8Day.md
+notes/day-08-*.md
+!notes/day-08-prompt-injection.md
+labs/day-08-*.md
+!labs/day-08-direct-injection.md
+!labs/day-08-indirect-injection.md
+!labs/day-08-control-validation.md
+labs/day08-*.json
+!labs/day08-direct-injection-cases.json
+!labs/day08-indirect-injection-cases.json
+!labs/day08-control-cases.json
+labs/run-day08-*.ps1
+!labs/run-day08-direct-injection.ps1
+!labs/run-day08-indirect-injection.ps1
+!labs/run-day08-control-cases.ps1
+!cases/llm-security/prompt_injection_cases.md
+reports/day-08-*.jsonl
+!reports/day-08-direct-injection-run-v0-2.jsonl
+!reports/day-08-indirect-injection-run-v0-1.jsonl
+!reports/day-08-control-cases-run-v0-4.jsonl
+!reports/day-08-review.md
+
+# Day 8 reproducibility fixtures; derived logs stay local
+labs/week-02/
+!labs/week-02/
+!labs/week-02/documents/
+!labs/week-02/documents/README.md
+!labs/week-02/documents/clean-01.md
+!labs/week-02/documents/clean-02.md
+!labs/week-02/documents/clean-03.md
+!labs/week-02/documents/clean-04.md
+!labs/week-02/documents/clean-05.md
+!labs/week-02/documents/untrusted-01.md
+!labs/week-02/documents/untrusted-02.md
+!labs/week-02/documents/untrusted-03.md
+!labs/week-02/documents/untrusted-04.md
+!labs/week-02/documents/untrusted-05.md
+!labs/week-02/simulator/
+!labs/week-02/simulator/README.md
+!labs/week-02/simulator/day-08-local-simulator.ps1
+!labs/week-02/tool-stubs/
+!labs/week-02/tool-stubs/day-08-tool-results.json
+labs/week-02/logs/
