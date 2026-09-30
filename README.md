@@ -7,7 +7,7 @@
 ## 当前进度
 
 - 已公开：总路线、分阶段学习计划，以及 Day 1 至 Day 8 的完整学习成果
-- 当前进度：已完成 Day 1–6 证据盘点、16 项统一术语表、20 道逐题自测、用例结构修补和第 1 周复盘
+- 当前进度：已完成 Day 1–6 证据盘点、16 项统一术语表、20 道逐题自测、用例结构修补和阶段 1 复盘
 - 审计结论：80 个逻辑输入均有实测证据和输入级唯一 ID，待实测与严格结构缺口均为 0；这不等于 80 条全部通过
 - 发布边界：Day 8 成果完整公开；调试中间版本、原始派生日志、教材副本和 Day 9 及后续内容仍留在本地
 - 学习环境：本地模型、虚构数据、模拟工具和明确授权的实验环境
@@ -16,9 +16,9 @@
 
 | 路径 | 内容 |
 | --- | --- |
-| `plan/` | 总计划与逐日学习计划 |
+| `plan/` | 分阶段总计划与学习单元计划 |
 | `notes/` | 概念笔记和阅读记录 |
-| `reports/` | 每日复盘、评估报告和阶段总结 |
+| `reports/` | 学习单元复盘、评估报告和阶段总结 |
 | `cases/` | 结构化安全测试案例 |
 | `labs/` | 可运行实验及实验说明 |
 | `tools/` | 评测器和辅助脚本 |
@@ -26,7 +26,7 @@
 
 ## 已公开内容
 
-- [42 天总计划](plan/AI安全42天逐日逐小时学习计划.md)
+- [AI 安全分阶段学习与成果验收计划](plan/AI安全分阶段学习与成果验收计划.md)
 - [Day 1 计划](plan/1Day.md)
 - [Day 1 基础笔记](notes/day-01-foundation.md)
 - [Day 1 复盘](reports/day-01-review.md)
@@ -80,12 +80,12 @@
 - [Day 6 原始模型响应](reports/day-06-jailbreak-safety-run.jsonl)
 - [Day 6 复盘](reports/day-06-review.md)
 - [Day 7 计划与最终验收](plan/7Day.md)
-- [第 1 周学习盘点（Day 1–6）](notes/week-01-inventory.md)
-- [第 1 周统一术语表](notes/week-01-glossary.md)
-- [第 1 周 LLM 安全用例审计](cases/llm-security/week-01-case-audit.md)
-- [第 1 周自测题（20 题）](labs/week-01-self-test.md)
-- [第 1 周学习周报与周末复盘](reports/week-01-report.md)
-- [第 2 周本地实验准备清单](reports/week-02-preparation.md)
+- [阶段 1 学习盘点（Day 1–6）](notes/week-01-inventory.md)
+- [阶段 1 统一术语表](notes/week-01-glossary.md)
+- [阶段 1 LLM 安全用例审计](cases/llm-security/week-01-case-audit.md)
+- [阶段 1 自测题（20 题）](labs/week-01-self-test.md)
+- [阶段 1 学习报告与复盘](reports/week-01-report.md)
+- [阶段 2 本地实验准备清单](reports/week-02-preparation.md)
 - [Day 8 计划](plan/8Day.md)
 - [Day 8 Prompt Injection 笔记](notes/day-08-prompt-injection.md)
 - [Day 8 直接注入实验](labs/day-08-direct-injection.md)
@@ -98,7 +98,7 @@
 - [AI 安全知识地图](AI安全知识地图.md)
 - [能力基线](能力基线.md)
 - [作品目标总览](作品目标总览.md)
-- [每日复盘模板](每日复盘模板.md)
+- [学习单元复盘模板](每日复盘模板.md)
 - [目录说明](notes/目录说明.md)
 
 ## 更新方式
