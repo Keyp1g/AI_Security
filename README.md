@@ -6,10 +6,10 @@
 
 ## 当前进度
 
-- 已公开：总路线、分阶段学习计划，以及 Day 1 至 Day 8 的完整学习成果
-- 当前进度：已完成 Day 1–6 证据盘点、16 项统一术语表、20 道逐题自测、用例结构修补和阶段 1 复盘
+- 已公开：总路线、分阶段学习计划、Day 1 至 Day 8 的完整学习成果，以及 Day 9 的实验阶段增量
+- 当前进度：Day 9 已完成本地 RAG 原型、5 个主流程和 5 组检索污染对照；理论笔记与主动回忆尚未验收
 - 审计结论：80 个逻辑输入均有实测证据和输入级唯一 ID，待实测与严格结构缺口均为 0；这不等于 80 条全部通过
-- 发布边界：Day 8 成果完整公开；调试中间版本、原始派生日志、教材副本和 Day 9 及后续内容仍留在本地
+- 发布边界：Day 9 仅公开实验、原始模型证据和复盘；理论笔记、调试中间版本、教材副本和 Day 10 及后续内容仍留在本地
 - 学习环境：本地模型、虚构数据、模拟工具和明确授权的实验环境
 
 ## 目录
@@ -93,6 +93,15 @@
 - [Day 8 控制验证实验](labs/day-08-control-validation.md)
 - [Day 8 Prompt Injection 正式用例库（20 条）](cases/llm-security/prompt_injection_cases.md)
 - [Day 8 复盘与 Day 9 准备](reports/day-08-review.md)
+- [Day 9 计划与实验完成状态](plan/9Day.md)
+- [Day 9 本地 RAG 数据集清单](labs/rag-security-lab/day-09-dataset-manifest.md)
+- [Day 9 最小 RAG 原型与运行记录](labs/rag-security-lab/day-09-minimal-rag.md)
+- [Day 9 检索污染测试记录](labs/rag-security-lab/day-09-retrieval-pollution.md)
+- [Day 9 RAG 安全实验系统需求](labs/rag-security-lab/requirements.md)
+- [Day 9 可复现实验脚本](labs/rag-security-lab/day-09-run-rag-experiments.py)
+- [Day 9 主流程原始证据](labs/rag-security-lab/logs/day-09-run.jsonl)
+- [Day 9 污染对照原始证据](labs/rag-security-lab/logs/day-09-pollution-run.jsonl)
+- [Day 9 实验复盘](reports/day-09-review.md)
 - [学习索引](学习索引.md)
 - [AI 安全路线拆解](AI安全路线拆解.md)
 - [AI 安全知识地图](AI安全知识地图.md)

@@ -169,3 +169,20 @@ labs/week-02/
 !labs/week-02/tool-stubs/
 !labs/week-02/tool-stubs/day-08-tool-results.json
 labs/week-02/logs/
+
+# Day 9 experiment increment; theory note remains local until learning validation
+!plan/9Day.md
+notes/day-09-*.md
+reports/day-09-*
+!reports/day-09-review.md
+plan/day09_run_rag_experiments.py
+labs/rag-security-lab/*
+!labs/rag-security-lab/day-09-dataset-manifest.md
+!labs/rag-security-lab/day-09-minimal-rag.md
+!labs/rag-security-lab/day-09-retrieval-pollution.md
+!labs/rag-security-lab/day-09-run-rag-experiments.py
+!labs/rag-security-lab/requirements.md
+!labs/rag-security-lab/logs/
+labs/rag-security-lab/logs/*
+!labs/rag-security-lab/logs/day-09-run.jsonl
+!labs/rag-security-lab/logs/day-09-pollution-run.jsonl
