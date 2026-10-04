@@ -6,10 +6,10 @@
 
 ## 当前进度
 
-- 已公开：总路线、分阶段学习计划、Day 1 至 Day 8 的完整学习成果，以及 Day 9 的实验阶段增量
-- 当前进度：Day 9 已完成本地 RAG 原型、5 个主流程和 5 组检索污染对照；理论笔记与主动回忆尚未验收
-- 审计结论：80 个逻辑输入均有实测证据和输入级唯一 ID，待实测与严格结构缺口均为 0；这不等于 80 条全部通过
-- 发布边界：Day 9 仅公开实验、原始模型证据和复盘；理论笔记、调试中间版本、教材副本和 Day 10 及后续内容仍留在本地
+- 已公开：总路线、分阶段学习计划、Day 1 至 Day 8 的完整学习成果，以及 Day 9、Day 10 的实验阶段增量
+- 当前进度：Day 10 已完成三个模拟工具的确定性安全网关、18 个滥用防护场景和审计证据；理论笔记与主动回忆尚未验收
+- 审计结论：Day 10 的 18 个确定性场景均有唯一 ID 和逐行证据，允许 5、拒绝 13；这只证明本地模拟网关的固定分支，不代表真实 Agent 或模型安全
+- 发布边界：Day 10 仅公开计划、实验、脚本、去时间线证据和复盘；理论笔记、调试中间版本、教材副本和 Day 11 及后续内容仍留在本地
 - 学习环境：本地模型、虚构数据、模拟工具和明确授权的实验环境
 
 ## 目录
@@ -102,6 +102,14 @@
 - [Day 9 主流程原始证据](labs/rag-security-lab/logs/day-09-run.jsonl)
 - [Day 9 污染对照原始证据](labs/rag-security-lab/logs/day-09-pollution-run.jsonl)
 - [Day 9 实验复盘](reports/day-09-review.md)
+- [Day 10 计划与实验完成状态](plan/10Day.md)
+- [Day 10 模拟工具契约](labs/agent-tool-security/day-10-tool-specs.md)
+- [Day 10 权限矩阵与服务端校验顺序](labs/agent-tool-security/day-10-permission-matrix.md)
+- [Day 10 工具滥用防护测试（18 条）](labs/agent-tool-security/day-10-tool-misuse-tests.md)
+- [Day 10 可复现实验脚本](labs/agent-tool-security/day-10-simulator.ps1)
+- [Day 10 去时间线原始证据](labs/agent-tool-security/day-10-simulator-results.jsonl)
+- [作品 3 Agent Tool Security Lab 需求](labs/agent-tool-security/requirements.md)
+- [Day 10 实验复盘](reports/day-10-review.md)
 - [学习索引](学习索引.md)
 - [AI 安全路线拆解](AI安全路线拆解.md)
 - [AI 安全知识地图](AI安全知识地图.md)

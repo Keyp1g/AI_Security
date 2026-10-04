@@ -186,3 +186,16 @@ labs/rag-security-lab/*
 labs/rag-security-lab/logs/*
 !labs/rag-security-lab/logs/day-09-run.jsonl
 !labs/rag-security-lab/logs/day-09-pollution-run.jsonl
+
+# Day 10 experiment increment; theory note remains local until learning validation
+!plan/10Day.md
+notes/day-10-*.md
+reports/day-10-*
+!reports/day-10-review.md
+labs/agent-tool-security/*
+!labs/agent-tool-security/day-10-tool-specs.md
+!labs/agent-tool-security/day-10-permission-matrix.md
+!labs/agent-tool-security/day-10-tool-misuse-tests.md
+!labs/agent-tool-security/day-10-simulator.ps1
+!labs/agent-tool-security/day-10-simulator-results.jsonl
+!labs/agent-tool-security/requirements.md
