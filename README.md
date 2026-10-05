@@ -7,9 +7,9 @@
 ## 当前进度
 
 - 已公开：总路线、分阶段学习计划、Day 1 至 Day 8 的完整学习成果，以及 Day 9、Day 10 的实验阶段增量
-- 当前进度：Day 10 已完成三个模拟工具的确定性安全网关、18 个滥用防护场景和审计证据；理论笔记与主动回忆尚未验收
+- 当前进度：Day 9 理论与实验均已完成；Day 10 已完成三个模拟工具的确定性安全网关、18 个滥用防护场景和审计证据，Day 10 理论笔记与主动回忆尚未验收
 - 审计结论：Day 10 的 18 个确定性场景均有唯一 ID 和逐行证据，允许 5、拒绝 13；这只证明本地模拟网关的固定分支，不代表真实 Agent 或模型安全
-- 发布边界：Day 10 仅公开计划、实验、脚本、去时间线证据和复盘；理论笔记、调试中间版本、教材副本和 Day 11 及后续内容仍留在本地
+- 发布边界：Day 9 理论、实验和复盘已完整公开；Day 10 仅公开计划、实验、脚本、去时间线证据和复盘；Day 10 理论笔记、调试中间版本、教材副本和 Day 11 及后续内容仍留在本地
 - 学习环境：本地模型、虚构数据、模拟工具和明确授权的实验环境
 
 ## 目录
@@ -94,6 +94,7 @@
 - [Day 8 Prompt Injection 正式用例库（20 条）](cases/llm-security/prompt_injection_cases.md)
 - [Day 8 复盘与 Day 9 准备](reports/day-08-review.md)
 - [Day 9 计划与实验完成状态](plan/9Day.md)
+- [Day 9 RAG 架构理论笔记](notes/day-09-rag-architecture.md)
 - [Day 9 本地 RAG 数据集清单](labs/rag-security-lab/day-09-dataset-manifest.md)
 - [Day 9 最小 RAG 原型与运行记录](labs/rag-security-lab/day-09-minimal-rag.md)
 - [Day 9 检索污染测试记录](labs/rag-security-lab/day-09-retrieval-pollution.md)

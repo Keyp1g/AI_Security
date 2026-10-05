@@ -173,6 +173,7 @@ labs/week-02/logs/
 # Day 9 experiment increment; theory note remains local until learning validation
 !plan/9Day.md
 notes/day-09-*.md
+!notes/day-09-rag-architecture.md
 reports/day-09-*
 !reports/day-09-review.md
 plan/day09_run_rag_experiments.py
