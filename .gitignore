@@ -191,6 +191,7 @@ labs/rag-security-lab/logs/*
 # Day 10 experiment increment; theory note remains local until learning validation
 !plan/10Day.md
 notes/day-10-*.md
+!notes/day-10-agent-components-theory.md
 reports/day-10-*
 !reports/day-10-review.md
 labs/agent-tool-security/*
