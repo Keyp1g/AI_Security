@@ -192,6 +192,7 @@ labs/rag-security-lab/logs/*
 !plan/10Day.md
 notes/day-10-*.md
 !notes/day-10-agent-components-theory.md
+!notes/day-10-tool-calling-flow-theory.md
 reports/day-10-*
 !reports/day-10-review.md
 labs/agent-tool-security/*
