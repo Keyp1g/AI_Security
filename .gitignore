@@ -194,6 +194,7 @@ notes/day-10-*.md
 !notes/day-10-agent-components-theory.md
 !notes/day-10-tool-calling-flow-theory.md
 !notes/day-10-tool-contracts-theory.md
+!notes/day-10-permission-matrix-theory.md
 reports/day-10-*
 !reports/day-10-review.md
 labs/agent-tool-security/*

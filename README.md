@@ -6,10 +6,10 @@
 
 ## 当前进度
 
-- 已公开：总路线、分阶段学习计划、Day 1 至 Day 8 的完整学习成果，以及 Day 9、Day 10 的实验阶段增量和 Day 10 前三个理论阶段
-- 当前进度：Day 9 理论与实验均已完成；Day 10 的实验、六组件理论、Tool Calling 控制链理论和三个模拟工具契约理论已完成，权限矩阵理论尚待继续
+- 已公开：总路线、分阶段学习计划、Day 1 至 Day 8 的完整学习成果，以及 Day 9、Day 10 的完整模拟实验与理论验收成果
+- 当前进度：Day 9 理论与实验均已完成；Day 10 计划内任务、实验、六组件理论、Tool Calling 控制链、三个工具契约和权限矩阵理论均已完成；真实 Agent/LLM 集成不在本日验收范围
 - 审计结论：Day 10 的 18 个确定性场景均有唯一 ID 和逐行证据，允许 5、拒绝 13；这只证明本地模拟网关的固定分支，不代表真实 Agent 或模型安全
-- 发布边界：Day 9 理论、实验和复盘已完整公开；Day 10 公开计划、实验、脚本、去时间线证据、复盘及已验收的六组件、Tool Calling 控制链和工具契约理论；完整本地笔记、未完成的权限矩阵理论、调试中间版本、教材副本和 Day 11 及后续内容仍留在本地
+- 发布边界：Day 9 理论、实验和复盘已完整公开；本次公开 Day 10 计划、权限矩阵理论和既有实验/复盘证据；学习方法论、教材副本、调试中间版本、服务器未完成资产和 Day 11 及后续内容仍留在本地
 - 学习环境：本地模型、虚构数据、模拟工具和明确授权的实验环境
 
 ## 目录
@@ -107,6 +107,7 @@
 - [Day 10 六组件理论（已验收部分）](notes/day-10-agent-components-theory.md)
 - [Day 10 Tool Calling 控制链理论（已验收部分）](notes/day-10-tool-calling-flow-theory.md)
 - [Day 10 三个模拟工具契约理论（已验收部分）](notes/day-10-tool-contracts-theory.md)
+- [Day 10 角色与对象级权限矩阵理论](notes/day-10-permission-matrix-theory.md)
 - [Day 10 模拟工具契约](labs/agent-tool-security/day-10-tool-specs.md)
 - [Day 10 权限矩阵与服务端校验顺序](labs/agent-tool-security/day-10-permission-matrix.md)
 - [Day 10 工具滥用防护测试（18 条）](labs/agent-tool-security/day-10-tool-misuse-tests.md)
