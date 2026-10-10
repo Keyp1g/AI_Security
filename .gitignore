@@ -204,3 +204,7 @@ labs/agent-tool-security/*
 !labs/agent-tool-security/day-10-simulator.ps1
 !labs/agent-tool-security/day-10-simulator-results.jsonl
 !labs/agent-tool-security/requirements.md
+
+# Day 11 partial public release: theory only
+notes/day-11-*.md
+!notes/day-11-application-attack-surface-theory.md
