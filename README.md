@@ -6,10 +6,10 @@
 
 ## 当前进度
 
-- 已公开：总路线、分阶段学习计划、Day 1 至 Day 8 的完整学习成果，以及 Day 9、Day 10 的完整模拟实验与理论验收成果
-- 当前进度：Day 9 理论与实验均已完成；Day 10 计划内任务、实验、六组件理论、Tool Calling 控制链、三个工具契约和权限矩阵理论均已完成；Day 11 已公开三层攻击面理论与逻辑模型，完整威胁建模和检查清单仍在本地
+- 已公开：总路线、分阶段学习计划，以及 Day 1 至 Day 11 的已完成学习成果
+- 当前进度：Day 11 已完成三层攻击面、虚构企业知识助手威胁模型、STRIDE、12 个待实测最小测试、32 项安全检查清单、平台控制证据同步和复盘
 - 审计结论：Day 10 的 18 个确定性场景均有唯一 ID 和逐行证据，允许 5、拒绝 13；这只证明本地模拟网关的固定分支，不代表真实 Agent 或模型安全
-- 发布边界：Day 9 理论、实验和复盘已完整公开；本次公开 Day 10 计划、权限矩阵理论和既有实验/复盘证据；学习方法论、教材副本、调试中间版本、服务器未完成资产和 Day 11 及后续内容仍留在本地
+- 发布边界：Day 11 应用测试均明确标为待实测；公开服务器证据仅为脱敏摘要，完整 runbook、案例时间线、服务器脚本和未部署控制继续留在本地
 - 学习环境：本地模型、虚构数据、模拟工具和明确授权的实验环境
 
 ## 目录
@@ -116,6 +116,14 @@
 - [作品 3 Agent Tool Security Lab 需求](labs/agent-tool-security/requirements.md)
 - [Day 10 实验复盘](reports/day-10-review.md)
 - [Day 11 LLM 应用层攻击面（三层模型）](notes/day-11-application-attack-surface-theory.md)
+- [Day 11 计划与完成状态](plan/11Day.md)
+- [Day 11 完整攻击面笔记](notes/day-11-application-attack-surface.md)
+- [Day 11 企业知识助手威胁模型](labs/day-11-threat-model.md)
+- [Day 11 STRIDE 风险矩阵与测试设计](labs/day-11-stride-matrix.md)
+- [AI 应用安全检查清单（32 项）](AI应用安全检查清单.md)
+- [Day 11 复盘前门禁](reports/day-11-pre-review-gate.md)
+- [Day 11 平台控制证据摘要](reports/day-11-platform-control-evidence.md)
+- [Day 11 复盘与 Day 12 准备](reports/day-11-review.md)
 - [学习索引](学习索引.md)
 - [AI 安全路线拆解](AI安全路线拆解.md)
 - [AI 安全知识地图](AI安全知识地图.md)

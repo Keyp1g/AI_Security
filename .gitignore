@@ -205,6 +205,16 @@ labs/agent-tool-security/*
 !labs/agent-tool-security/day-10-simulator-results.jsonl
 !labs/agent-tool-security/requirements.md
 
-# Day 11 partial public release: theory only
+# Day 11 completed release boundary
+!plan/11Day.md
 notes/day-11-*.md
 !notes/day-11-application-attack-surface-theory.md
+!notes/day-11-application-attack-surface.md
+labs/day-11-*.md
+!labs/day-11-threat-model.md
+!labs/day-11-stride-matrix.md
+reports/day-11-*.md
+!reports/day-11-pre-review-gate.md
+!reports/day-11-review.md
+!reports/day-11-platform-control-evidence.md
+!AI应用安全检查清单.md
