@@ -218,3 +218,10 @@ reports/day-11-*.md
 !reports/day-11-review.md
 !reports/day-11-platform-control-evidence.md
 !AI应用安全检查清单.md
+
+# Day 12 partial release boundary; theory only
+notes/day-12-*.md
+!notes/day-12-privacy-risks-theory.md
+labs/day-12-*.md
+reports/day-12-*.md
+cases/llm-security/day-12-*.md
