@@ -1,227 +1,69 @@
+# Local task state
+.scratch/
+
 # Local models and large runtime data
 model/
 
-# Local copy of the upstream textbook and other source materials
+# Local source materials
 theAIMythbook-1.0.1/
 大模型渗透测试：大语言模型安全防护教程/
 *.pdf
 
-# Local editor logs and machine-specific artifacts
+# Machine-specific and editor artifacts
 Typora_Hook_Log.txt
-plan/Typora_Hook_Log.txt
+**/Typora_Hook_Log.txt
 __pycache__/
+**/__pycache__/
 
-# Publish daily plans and results only after their release scope is confirmed
-plan/*Day.md
-!plan/1Day.md
-!plan/2Day.md
-!plan/3Day.md
-notes/day-02-*.md
-!notes/day-02-llm-basics.md
-reports/day-02-*.md
-!reports/day-02-ollama-test-log.md
-!reports/day-02-review.md
-cases/llm-security/day-02-*.md
-!cases/llm-security/day-02-llm-failures.md
-labs/run-day02-*.ps1
-!labs/run-day02-ollama-api.ps1
-!labs/run-day02-failure-cases.ps1
-!labs/run-day02-output-comparison.ps1
-labs/day02-*.json
-!labs/day02-failure-prompts.json
-
-# Personal scratch note excluded by the publishing scope
-Day 1.md
-
-# Local learning and publishing methodologies
+# Personal drafts and local methodologies
+/Day 1.md
+/学习单元 1.md
 notes/learning-methodology.md
 learning-methodology.md
 GitHub上线方法论.md
 
-# Day 3 release boundary
-notes/day-03-*.md
-!notes/day-03-prompt-and-instructions.md
-reports/day-03-*
-!reports/day-03-prompt-quality-run.jsonl
-!reports/day-03-prompt-variants-run.jsonl
-!reports/day-03-review.md
-cases/llm-security/day-03-*.md
-!cases/llm-security/day-03-prompt-quality-cases.md
-labs/day-03-*.md
-!labs/day-03-prompt-variants.md
-labs/day03-*.json
-!labs/day03-prompt-quality-cases.json
-!labs/day03-prompt-variants.json
-labs/run-day03-*.ps1
-!labs/run-day03-prompt-quality.ps1
+# Environment operations stay local and separate from the learning route
+labs/server-security/
 
-# Day 4 complete release boundary
-plan/*Day.md
-!plan/4Day.md
-!plan/7Day.md
-notes/day-04-*.md
-!notes/day-04-hallucination-bias.md
-reports/day-04-*
-!reports/day-04-hallucination-run.jsonl
-!reports/day-04-fairness-run.jsonl
-!reports/day-04-review.md
-cases/llm-security/day-04-*.md
-!cases/llm-security/day-04-hallucination-bias.md
-cases/llm-security/hallucination_bias_cases.md
-!cases/llm-security/hallucination_bias_cases.md
-labs/day-04-*.md
-!labs/day-04-fact-checking.md
-labs/day04-*.json
-!labs/day04-hallucination-bias-cases.json
-!labs/day04-fairness-pairs.json
-labs/run-day04-*.ps1
-!labs/run-day04-hallucination.ps1
-!labs/run-day04-fairness.ps1
+# Only accepted learning-unit plans are public
+plan/unit-*.md
+!plan/unit-01.md
+!plan/unit-02.md
+!plan/unit-03.md
+!plan/unit-04.md
+!plan/unit-05.md
+!plan/unit-06.md
+!plan/unit-07.md
+!plan/unit-08.md
+!plan/unit-09.md
+!plan/unit-10.md
+!plan/unit-11.md
+!plan/unit-12.md
 
-# Day 5 complete release boundary
-notes/day-05-*.md
-!notes/day-05-prompt-workflow.md
-labs/day-05-*.md
-!labs/day-05-template-evaluation.md
-labs/run-day05-*.ps1
-!labs/run-day05-template-evaluation.ps1
-reports/day-05-*
-!reports/day-05-review.md
-!reports/day-05-template-run-v0-1.jsonl
-!reports/day-05-template-run-v0-2.jsonl
-cases/llm-security/day-05-*.md
+# Future learning-unit artifacts stay local until acceptance
+**/unit-1[3-9]-*
+**/unit-[2-9][0-9]-*
+**/unit1[3-9]-*
+**/unit[2-9][0-9]-*
+**/run-unit1[3-9]-*
+**/run-unit[2-9][0-9]-*
+**/stage-0[3-9]-*
+**/stage-[1-9][0-9]-*
 
-# Day 6 complete release boundary
-!plan/6Day.md
-notes/day-06-*.md
-!notes/day-06-jailbreak-theory.md
-!notes/day-06-jailbreak-basics.md
-cases/llm-security/day-06-*.md
-!cases/llm-security/day-06-jailbreak-safety.md
-!cases/llm-security/day-06-jailbreak-safety-cases.md
-cases/llm-security/jailbreak_safety_cases.md
-!cases/llm-security/jailbreak_safety_cases.md
-labs/day-06-*.md
-!labs/day-06-refusal-quality.md
-!labs/day-06-jailbreak-safety-evaluation.md
-labs/day06-*.json
-!labs/day06-jailbreak-safety-cases.json
-labs/run-day06-*.ps1
-!labs/run-day06-jailbreak-safety.ps1
-reports/day-06-*
-!reports/day-06-jailbreak-safety-run.jsonl
-!reports/day-06-review.md
+# Derived local logs are excluded unless explicitly accepted
+labs/stage-02/logs/
+notes/unit-10-agent-tool-calling.md
+reports/unit-08-control-cases-run-v0-0.jsonl
+reports/unit-08-control-cases-run-v0-2.jsonl
+reports/unit-08-control-cases-run-v0-3.jsonl
+reports/unit-08-direct-injection-run-v0-1.jsonl
 
-# Day 7 complete release boundary
-notes/week-01-*.md
-!notes/week-01-inventory.md
-!notes/week-01-glossary.md
-labs/week-01-*.md
-!labs/week-01-self-test.md
-cases/llm-security/week-01-*.md
-!cases/llm-security/week-01-case-audit.md
-reports/week-01-*.md
-!reports/week-01-report.md
-reports/week-02-*.md
-!reports/week-02-preparation.md
-
-# Day 8 complete release boundary
-!plan/8Day.md
-notes/day-08-*.md
-!notes/day-08-prompt-injection.md
-labs/day-08-*.md
-!labs/day-08-direct-injection.md
-!labs/day-08-indirect-injection.md
-!labs/day-08-control-validation.md
-labs/day08-*.json
-!labs/day08-direct-injection-cases.json
-!labs/day08-indirect-injection-cases.json
-!labs/day08-control-cases.json
-labs/run-day08-*.ps1
-!labs/run-day08-direct-injection.ps1
-!labs/run-day08-indirect-injection.ps1
-!labs/run-day08-control-cases.ps1
-!cases/llm-security/prompt_injection_cases.md
-reports/day-08-*.jsonl
-!reports/day-08-direct-injection-run-v0-2.jsonl
-!reports/day-08-indirect-injection-run-v0-1.jsonl
-!reports/day-08-control-cases-run-v0-4.jsonl
-!reports/day-08-review.md
-
-# Day 8 reproducibility fixtures; derived logs stay local
-labs/week-02/
-!labs/week-02/
-!labs/week-02/documents/
-!labs/week-02/documents/README.md
-!labs/week-02/documents/clean-01.md
-!labs/week-02/documents/clean-02.md
-!labs/week-02/documents/clean-03.md
-!labs/week-02/documents/clean-04.md
-!labs/week-02/documents/clean-05.md
-!labs/week-02/documents/untrusted-01.md
-!labs/week-02/documents/untrusted-02.md
-!labs/week-02/documents/untrusted-03.md
-!labs/week-02/documents/untrusted-04.md
-!labs/week-02/documents/untrusted-05.md
-!labs/week-02/simulator/
-!labs/week-02/simulator/README.md
-!labs/week-02/simulator/day-08-local-simulator.ps1
-!labs/week-02/tool-stubs/
-!labs/week-02/tool-stubs/day-08-tool-results.json
-labs/week-02/logs/
-
-# Day 9 experiment increment; theory note remains local until learning validation
-!plan/9Day.md
-notes/day-09-*.md
-!notes/day-09-rag-architecture.md
-reports/day-09-*
-!reports/day-09-review.md
-plan/day09_run_rag_experiments.py
-labs/rag-security-lab/*
-!labs/rag-security-lab/day-09-dataset-manifest.md
-!labs/rag-security-lab/day-09-minimal-rag.md
-!labs/rag-security-lab/day-09-retrieval-pollution.md
-!labs/rag-security-lab/day-09-run-rag-experiments.py
-!labs/rag-security-lab/requirements.md
-!labs/rag-security-lab/logs/
-labs/rag-security-lab/logs/*
-!labs/rag-security-lab/logs/day-09-run.jsonl
-!labs/rag-security-lab/logs/day-09-pollution-run.jsonl
-
-# Day 10 experiment increment; theory note remains local until learning validation
-!plan/10Day.md
-notes/day-10-*.md
-!notes/day-10-agent-components-theory.md
-!notes/day-10-tool-calling-flow-theory.md
-!notes/day-10-tool-contracts-theory.md
-!notes/day-10-permission-matrix-theory.md
-reports/day-10-*
-!reports/day-10-review.md
-labs/agent-tool-security/*
-!labs/agent-tool-security/day-10-tool-specs.md
-!labs/agent-tool-security/day-10-permission-matrix.md
-!labs/agent-tool-security/day-10-tool-misuse-tests.md
-!labs/agent-tool-security/day-10-simulator.ps1
-!labs/agent-tool-security/day-10-simulator-results.jsonl
-!labs/agent-tool-security/requirements.md
-
-# Day 11 completed release boundary
-!plan/11Day.md
-notes/day-11-*.md
-!notes/day-11-application-attack-surface-theory.md
-!notes/day-11-application-attack-surface.md
-labs/day-11-*.md
-!labs/day-11-threat-model.md
-!labs/day-11-stride-matrix.md
-reports/day-11-*.md
-!reports/day-11-pre-review-gate.md
-!reports/day-11-review.md
-!reports/day-11-platform-control-evidence.md
-!AI应用安全检查清单.md
-
-# Day 12 partial release boundary; theory only
-notes/day-12-*.md
-!notes/day-12-privacy-risks-theory.md
-labs/day-12-*.md
-reports/day-12-*.md
-cases/llm-security/day-12-*.md
+# Learning unit 12 is a complete public evidence package
+!notes/unit-12-privacy-risks-theory.md
+!notes/unit-12-privacy-risks.md
+!labs/unit-12-synthetic-secrets.md
+!labs/unit-12-detection-rules.md
+!labs/run-unit12-privacy-leakage.ps1
+!cases/llm-security/unit-12-privacy-leakage.md
+!reports/unit-12-privacy-leakage-run.jsonl
+!reports/unit-12-review.md

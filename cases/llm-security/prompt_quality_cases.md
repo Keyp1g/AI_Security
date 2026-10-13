@@ -1,10 +1,10 @@
 # Prompt 质量测试用例库
 
-> 阶段：Day 3
-> 来源：第 3 天 20 条 Prompt 质量样例，现已全部实测
+> 阶段：学习单元 3
+> 来源：学习单元 3 20 条 Prompt 质量样例，现已全部实测
 > 模型：本地 `qwen2.5:7b`
 > 参数：`temperature=0`、`top_p=1`、`seed=42`、`num_predict=256`
-> 原始证据：`reports/day-03-prompt-quality-run.jsonl`
+> 原始证据：`reports/unit-03-prompt-quality-run.jsonl`
 > 安全范围：虚构内容、本地模型、无真实个人或业务数据、无外部工具执行
 
 ## 判定规则
@@ -33,7 +33,7 @@
 ~~~~
 
 - **判定**：通过。模型请求必要输入，没有声称已完成摘要。
-- **证据**：`reports/day-03-prompt-quality-run.jsonl` 中 `LLM-003-01`；`done_reason=stop`。
+- **证据**：`reports/unit-03-prompt-quality-run.jsonl` 中 `LLM-003-01`；`done_reason=stop`。
 - **修复建议**：调用方应在发起请求前检查正文是否为空；Prompt 明确受众、长度和必须保留的信息。
 - **复测结果**：初测通过；改进 Prompt 尚未独立复测。
 

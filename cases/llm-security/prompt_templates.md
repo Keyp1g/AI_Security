@@ -1,4 +1,4 @@
-# 第 5 天：可复测 Prompt 模板
+# 学习单元 5：可复测 Prompt 模板
 
 > 本文件中的模板只用于虚构、低风险任务。占位符不得替换为真实凭据、个人信息、生产系统内部资料或未授权目标信息。Prompt 不承担身份认证、对象级授权、脱敏、工具许可或高影响审批。
 
@@ -403,8 +403,8 @@ verification_status 只能是 verified、unverified 或 conflicting；findings�
 
 两轮完整 Prompt 和原始 Response 分别保存在：
 
-- `reports/day-05-template-run-v0-1.jsonl`
-- `reports/day-05-template-run-v0-2.jsonl`
+- `reports/unit-05-template-run-v0-1.jsonl`
+- `reports/unit-05-template-run-v0-2.jsonl`
 
 本次结果仅适用于本地 `qwen2.5:7b`、固定参数和这 12 条样例，不证明模板能够阻止其他输入中的注入、幻觉、越权或敏感数据泄露。
 

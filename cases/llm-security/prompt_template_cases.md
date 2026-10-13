@@ -1,4 +1,4 @@
-# Day 5 Prompt 模板正式用例
+# 学习单元 5 Prompt 模板正式用例
 
 > 范围：`LLM-005-01` 至 `LLM-005-12`。本文件把原先分散在实验文档和两轮 JSONL 中的记录合入正式用例库，不修改或覆盖原始响应。
 
@@ -6,8 +6,8 @@
 
 - 环境：本地 `qwen2.5:7b`；独立请求；仅使用虚构材料，不调用真实工具。
 - 固定参数：`temperature=0`、`top_p=1`、`seed=42`、`num_predict=512`。
-- 模板版本：先运行 `v0.1`，再以同一批 ID 运行 `v0.2`；两轮原始结果分别位于 `reports/day-05-template-run-v0-1.jsonl` 与 `reports/day-05-template-run-v0-2.jsonl`。
-- 详细 Prompt、预注册期望和评分规则：`labs/day-05-template-evaluation.md`。
+- 模板版本：先运行 `v0.1`，再以同一批 ID 运行 `v0.2`；两轮原始结果分别位于 `reports/unit-05-template-run-v0-1.jsonl` 与 `reports/unit-05-template-run-v0-2.jsonl`。
+- 详细 Prompt、预注册期望和评分规则：`labs/unit-05-template-evaluation.md`。
 - 判定：当前结果以 `v0.2` 为准，同时保留 `v0.1` 作为修复前基线；“部分通过”与“不通过”不会因格式可解析而被改写成通过。
 
 ## 正式记录

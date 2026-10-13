@@ -1,7 +1,7 @@
 # 作品 3：Agent Tool Security Lab 需求文档
 
 > 版本：v0.1
-> 阶段：Day 10 确定性模拟原型
+> 阶段：学习单元 10 确定性模拟原型
 
 ## 1. 问题与目标
 
@@ -101,9 +101,9 @@ proposed
 
 ## 11. 交付物
 
-- `day-10-tool-specs.md`
-- `day-10-permission-matrix.md`
-- `day-10-tool-misuse-tests.md`
-- `day-10-simulator.ps1`
-- `day-10-simulator-results.jsonl`
+- `unit-10-tool-specs.md`
+- `unit-10-permission-matrix.md`
+- `unit-10-tool-misuse-tests.md`
+- `unit-10-simulator.ps1`
+- `unit-10-simulator-results.jsonl`
 - 本 `requirements.md`
