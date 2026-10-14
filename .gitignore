@@ -1,5 +1,6 @@
 # Local task state
 .scratch/
+.workbuddy/
 
 # Local models and large runtime data
 model/
@@ -67,3 +68,9 @@ reports/unit-08-direct-injection-run-v0-1.jsonl
 !cases/llm-security/unit-12-privacy-leakage.md
 !reports/unit-12-privacy-leakage-run.jsonl
 !reports/unit-12-review.md
+
+# Learning unit 13 is published partially: methodology steps 1-4 only
+# Steps 5-9 (risk scoring, batch scoring, assessment template, review) stay local
+!notes/unit-13-ai-security-testing.md
+!cases/llm-security/case-schema.md
+!cases/llm-security/unit-13-case-normalization.md
