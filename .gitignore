@@ -69,8 +69,12 @@ reports/unit-08-direct-injection-run-v0-1.jsonl
 !reports/unit-12-privacy-leakage-run.jsonl
 !reports/unit-12-review.md
 
-# Learning unit 13 is published partially: methodology steps 1-4 only
-# Steps 5-9 (risk scoring, batch scoring, assessment template, review) stay local
+# Learning unit 13 is a complete public methodology and assessment package
+!plan/unit-13.md
 !notes/unit-13-ai-security-testing.md
 !cases/llm-security/case-schema.md
 !cases/llm-security/unit-13-case-normalization.md
+!labs/unit-13-risk-scoring.md
+!labs/unit-13-batch-scoring.md
+!reports/agent-security-assessment/assessment-template.md
+!reports/unit-13-review.md
