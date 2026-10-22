@@ -78,3 +78,12 @@ reports/unit-08-direct-injection-run-v0-1.jsonl
 !labs/unit-13-batch-scoring.md
 !reports/agent-security-assessment/assessment-template.md
 !reports/unit-13-review.md
+
+# Learning unit 14 is public under exception acceptance
+!plan/unit-14.md
+!reports/stage-03-web-preparation.md
+
+# Unit 14 raw local runs retain full prompts, responses and runtime state
+labs/stage-02-e2e-logs/
+reports/E2E-*-local-ollama-e2e-review.md
+reports/stage-02-local-ollama-e2e-review.md
