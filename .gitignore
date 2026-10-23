@@ -83,6 +83,9 @@ reports/unit-08-direct-injection-run-v0-1.jsonl
 !plan/unit-14.md
 !reports/stage-03-web-preparation.md
 
+# Learning unit 15 is partially public: accepted HTTP theory only
+!notes/unit-15-http-basics.md
+
 # Unit 14 raw local runs retain full prompts, responses and runtime state
 labs/stage-02-e2e-logs/
 reports/E2E-*-local-ollama-e2e-review.md
